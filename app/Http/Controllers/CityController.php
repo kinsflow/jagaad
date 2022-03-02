@@ -39,7 +39,7 @@ class CityController extends Controller
      * @param WeatherAPIService $weatherAPIService
      * @return JsonResponse
      */
-    public function show(Request $request, MusementService $musementService, WeatherAPIService $weatherAPIService)
+    public function show(Request $request, MusementService $musementService, WeatherAPIService $weatherAPIService): JsonResponse
     {
         $city = json_decode($musementService->getCity($request->city_id)->getContents());
 
