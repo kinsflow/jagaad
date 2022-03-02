@@ -1,5 +1,7 @@
 <?php
 
+use App\Providers\MusementServiceProvider;
+use App\Providers\WeatherAPIServiceProvider;
 use Illuminate\Support\Facades\Facade;
 
 return [
@@ -16,6 +18,9 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    'musemant_api_url' => env('MUSEMENT_API_URL'),
+    'weather_api_url' => env('WEATHER_API_URL'),
+    'weather_api_key' => env('WEATHER_API_KEY'),
 
     /*
     |--------------------------------------------------------------------------
